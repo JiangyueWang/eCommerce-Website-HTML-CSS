@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* common layout */
+h3 {
+    font-weight: lighter;
+}
+hr {
+    border-top: 5px solid black
+}
+.flex { 
+    display: flex;
+}
+/* header layout */
+header {
+    margin: 0 5em;
+}
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-list li a {
+    text-decoration: none;
+    margin-right: 2em;
+}
+
+.header-logo {
+    align-items: center;
+
+}
+.header-logo img {
+    height: 30px;
+}
+.magnify {
+    border: solid black 1px;
+
+}
+.magnify img{
+    max-width:20px;
+    margin-left: 30em;
+}
+
+/* hero section */
+.hero-section {
+    position: relative;
+    background-color: black;
+    margin: 2em 0;
+    height: 24em;
+    
+}
+.hero-section img {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-section-top-left-text {
+    position: absolute;
+    top:46px;
+    left: 16px;
+    color: white;
+}
+.hero-section-bottom-right-text {
+    position: absolute;
+    bottom:80px;
+    right: 16px;
+    color: white;
+}
+
+
+main {
+    margin: 0 5em;
+}
+.grid {
+    display: grid;
+    gap:10rem;
+    grid-template-columns: repeat(3, 1fr); 
+}
+/* about us  */
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.about-us-grid-item3 {
+    grid-row-start: 3;
+
+}
+/* .about-us-grid-item5 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+} */
+
+.about-us-grid-item5 {
+    grid-column-start: 3;
+    grid-row: 2 / 4;
+    width: 20px;
+    height: 10px;
+}
+
+/* our products */
+.section-title {
+    grid-column: 1 /span 2;
+}
+.our-product-row1 {
+    grid-row-start: 2;
+}
+.our-product-row2 {
+    grid-row-start: 3;
+}
+.our-product-row3 {
+    grid-row-start: 4;
+}
+/* contact us form */
+.contact-us-form {
+    padding: 2em 0;    
+}
+.contact-us-form hr {
+    width: 50%;
+}
+.form-inputs {
+    margin: auto;
+    width: 50%;
+}
+.form-btn{
+    text-align: right;
+    width: 88%;
+    margin: auto;
+    
+}
+.form-btn button {
+    background-color: rgb(191,118,49);
+    color: white;
+    border: none;
+    padding: 0.5em;
+}
+
+.message-input input{
+    height: 100px;
+}
+/* footer */
+footer {
+    background-color: rgb(191,118,49);
+}
